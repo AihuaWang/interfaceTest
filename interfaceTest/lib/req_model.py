@@ -232,3 +232,4 @@ def addbacks(bizId):
     else:
         mysql_util.insert("settle_receipt_bill_biz",id=200,create_time=current_time,modify_time=current_time,status=1,version=1,state=0,chn_id="ch001",ret_code=2005,ret_info="等待付收款",account_name='刘小燕',account_no='6214830101923232',amount=11,bank_id=308,biz_id="s00120171204r00004866",open_bank_name="招商银行",reserve_time=current_time,system_source_id="s001",trade_time=current_time)
         mysql_util.insert("settle_receipt_bill",id=200,create_time=current_time,modify_time=current_time,status=1,version=1,state=0,chn_id="ch001",ret_code=2005,ret_info="等待收款",account_name='刘小燕',account_no='6214830101923232',amount=11,bank_id=308,biz_id="s00120171204r00004866",open_bank_name="招商银行",reserve_time=current_time,system_source_id="s001",trade_time=current_time)
+

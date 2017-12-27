@@ -23,6 +23,7 @@ def test_payment():
     #print json.dumps(sql, indent=4, sort_keys=True)
     assert_util.verify(sql[0], state="0", ret_code="2005", ret_info=u'等待付款', receive_time=req_model.current_time,biz_id="s0012017111422263320",success_amount="0.00", system_source_id="s001", chn_id="ch001")
 
+
 @TestCase
 def test_paymentfail():
     # 单笔代付交易失败
